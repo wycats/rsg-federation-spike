@@ -31,6 +31,9 @@ module.exports = function (defaults) {
     // splitAtRoutes: ['route.name'], // can also be a RegExp
     packagerOptions: {
       webpackConfig: {
+        output:{
+          publicPath: 'http://localhost:4201/',
+        },
         plugins: [
           new ModuleFederationPlugin({
             name: 'child', // this name needs to match with the entry name
