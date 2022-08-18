@@ -1,0 +1,16 @@
+diff --git a/src/babel-plugin-adjust-imports.js b/src/babel-plugin-adjust-imports.js
+index c056fade468947ac8e5ae1c65b35cc2224eb0d3f..eaf4a2f014010f0b6aebe610b7d782ad8d3a0b19 100644
+--- a/src/babel-plugin-adjust-imports.js
++++ b/src/babel-plugin-adjust-imports.js
+@@ -173,6 +173,11 @@ function handleExternal(specifier, sourceFile, opts, isDynamic) {
+             return specifier;
+         }
+     }
++
++    if (packageName === 'child') {
++      return specifier;
++    }
++
+     // absolute package imports can also be explicitly external based on their
+     // full specifier name
+     if (isExplicitlyExternal(specifier, pkg)) {

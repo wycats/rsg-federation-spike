@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  '@embroider/core@1.8.3':
+    hash: vzb2v4gzchou2hm6f5ed2ridua
+    path: patches/@embroider__core@1.8.3.patch
+
 specifiers:
   '@ember/optional-features': ^2.0.0
   '@ember/test-helpers': ^2.8.1
@@ -45,7 +50,7 @@ devDependencies:
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1_bfwx5527ud67pz7vm5nr6nmdqq
   '@embroider/compat': 1.8.3_@embroider+core@1.8.3
-  '@embroider/core': 1.8.3
+  '@embroider/core': 1.8.3_vzb2v4gzchou2hm6f5ed2ridua
   '@embroider/webpack': 1.8.3_6ieuvvsbaka5ylmi63qvoovikm
   '@glimmer/component': 1.1.2_@babel+core@7.18.10
   '@glimmer/tracking': 1.1.2
@@ -2033,7 +2038,7 @@ packages:
       '@babel/core': 7.18.10_supports-color@8.1.1
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.18.6_@babel+core@7.18.10
       '@babel/plugin-proposal-optional-chaining': 7.18.9_@babel+core@7.18.10
-      '@embroider/core': 1.8.3_supports-color@8.1.1
+      '@embroider/core': 1.8.3_vzb2v4gzchou2hm6f5ed2ridua_supports-color@8.1.1
       babel-loader: 8.2.5_xc6oct4hcywdrbo4ned6ytbybm
     transitivePeerDependencies:
       - bufferutil
@@ -2055,7 +2060,7 @@ packages:
       '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.18.10
       '@babel/preset-env': 7.18.10_@babel+core@7.18.10
       '@babel/traverse': 7.18.11
-      '@embroider/core': 1.8.3
+      '@embroider/core': 1.8.3_vzb2v4gzchou2hm6f5ed2ridua
       '@embroider/macros': 1.8.3
       '@embroider/shared-internals': 1.8.3
       '@types/babel__code-frame': 7.0.3
@@ -2094,7 +2099,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@embroider/core/1.8.3:
+  /@embroider/core/1.8.3_vzb2v4gzchou2hm6f5ed2ridua:
     resolution: {integrity: sha512-/VdguyT/yhibgrjxL/J1ZFLvHo3EvUaBAxu9jAT3CYO9hIjWUKmJ81EZ0uK4zWykdifaefoz1/ctHnFjvm3/+w==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
@@ -2135,8 +2140,9 @@ packages:
       - supports-color
       - utf-8-validate
     dev: true
+    patched: true
 
-  /@embroider/core/1.8.3_supports-color@8.1.1:
+  /@embroider/core/1.8.3_vzb2v4gzchou2hm6f5ed2ridua_supports-color@8.1.1:
     resolution: {integrity: sha512-/VdguyT/yhibgrjxL/J1ZFLvHo3EvUaBAxu9jAT3CYO9hIjWUKmJ81EZ0uK4zWykdifaefoz1/ctHnFjvm3/+w==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
@@ -2177,6 +2183,7 @@ packages:
       - supports-color
       - utf-8-validate
     dev: true
+    patched: true
 
   /@embroider/hbs-loader/1.8.3_6ieuvvsbaka5ylmi63qvoovikm:
     resolution: {integrity: sha512-Lkl14BnOGHNeBJSbGbxdmakmyIzeHdGO7820gCBMTG+klC8F1JqJbr7p7DfNEc/ci/2E8UirDx3OlnYV/yWOXA==}
@@ -2185,7 +2192,7 @@ packages:
       '@embroider/core': 1.8.3
       webpack: ^5
     dependencies:
-      '@embroider/core': 1.8.3
+      '@embroider/core': 1.8.3_vzb2v4gzchou2hm6f5ed2ridua
       webpack: 5.74.0
     dev: true
 
@@ -2260,7 +2267,7 @@ packages:
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.18.6_@babel+core@7.18.10
       '@babel/plugin-proposal-optional-chaining': 7.18.9_@babel+core@7.18.10
       '@embroider/babel-loader-8': 1.8.3_omufzdyusrmquceqjtzym5b3nu
-      '@embroider/core': 1.8.3
+      '@embroider/core': 1.8.3_vzb2v4gzchou2hm6f5ed2ridua
       '@embroider/hbs-loader': 1.8.3_6ieuvvsbaka5ylmi63qvoovikm
       '@embroider/shared-internals': 1.8.3
       '@types/source-map': 0.5.7
