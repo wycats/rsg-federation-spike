@@ -5,6 +5,8 @@ const { ModuleFederationPlugin } = require('webpack').container;
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    storeConfigInMeta: false,
+
     // Add options here
   });
 
@@ -31,7 +33,7 @@ module.exports = function (defaults) {
     // splitAtRoutes: ['route.name'], // can also be a RegExp
     packagerOptions: {
       webpackConfig: {
-        output:{
+        output: {
           publicPath: 'http://localhost:4201/',
         },
         plugins: [
