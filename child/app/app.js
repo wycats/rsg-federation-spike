@@ -3,10 +3,12 @@ import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from 'child/config/environment';
 
-export default class App extends Application {
+export default class ChildApp extends Application {
   modulePrefix = config.modulePrefix;
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
+
+  mode = 'federated';
 }
 
-loadInitializers(App, config.modulePrefix);
+loadInitializers(ChildApp, config.modulePrefix);

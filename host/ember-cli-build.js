@@ -35,7 +35,7 @@ module.exports = function (defaults) {
           new ModuleFederationPlugin({
             name: 'host',
             remotes: {
-              child: 'child@http://localhost:4201/child-app.js',
+              child: 'child@http://localhost:4202/child-app.js',
             },
             shared: {
               'ember-source': { singleton: true },

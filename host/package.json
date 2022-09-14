@@ -63,15 +63,18 @@
     "qunit-dom": "^2.0.0",
     "webpack": "^5.74.0"
   },
+  "pnpm": {
+    "overrides": {
+      "ember-source": "link:../../ember.js"
+    },
+    "patchedDependencies": {
+      "@embroider/core@1.8.3": "patches/@embroider__core@1.8.3.patch"
+    }
+  },
   "engines": {
     "node": "14.* || >= 16"
   },
   "ember": {
     "edition": "octane"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "@embroider/core@1.8.3": "patches/@embroider__core@1.8.3.patch"
-    }
   }
 }

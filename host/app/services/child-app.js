@@ -16,18 +16,20 @@ export default class ChildAppService extends Service {
     console.log('service: ChildApp', ChildApp);
     const ChildAppInstance = ChildApp.create({
       rootElement: '#child-mount',
+      mode: 'federated',
     });
-    ChildAppInstance.deferReadiness();
     // const child = new ChildApp();
     const child = await ChildAppInstance.visit('/', {
-      location: 'none',
-      rootElement: '#child-mount',
+      // location: 'none',
+      // rootElement: '#child-mount',
       // autoboot: false,
     });
     window.child = child;
-    // ChildAppInstance.advanceReadiness();
-    // debugger;
-    console.log('service: visited child', child);
+    console.group('service: visited child', {
+      child,
+    });
+    console.log(document.querySelector('#child-mount'));
+    console.groupEnd();
     this.app = child;
   }
 }

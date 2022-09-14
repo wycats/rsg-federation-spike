@@ -34,7 +34,7 @@ module.exports = function (defaults) {
     packagerOptions: {
       webpackConfig: {
         output: {
-          publicPath: 'http://localhost:4201/',
+          publicPath: 'http://localhost:4202/',
         },
         plugins: [
           new ModuleFederationPlugin({
