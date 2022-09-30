@@ -1,3 +1,8 @@
+# Module Federation Experiment
+
+This repo depends on the [federation branch](https://github.com/emberjs/ember.js/tree/federation) of
+Ember.js.
+
 ## What We Know
 
 - We can load an application into another application with webpack module federation
