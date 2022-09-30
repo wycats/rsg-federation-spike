@@ -11,6 +11,8 @@ export default class ChildAppService extends Service {
   }
 
   async boot() {
+    await import('child/child');
+
     console.log('service: booting');
     const ChildApp = (await import('child/app')).default;
     console.log('service: ChildApp', ChildApp);
@@ -21,7 +23,7 @@ export default class ChildAppService extends Service {
     // const child = new ChildApp();
     const child = await ChildAppInstance.visit('/', {
       // location: 'none',
-      // rootElement: '#child-mount',
+      rootElement: '#child-mount',
       // autoboot: false,
     });
     window.child = child;

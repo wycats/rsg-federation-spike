@@ -27,6 +27,7 @@
     "@ember/test-helpers": "^2.8.1",
     "@embroider/compat": "^1.8.3",
     "@embroider/core": "1.8.3",
+    "@embroider/util": "1.8.3",
     "@embroider/webpack": "^1.8.3",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
@@ -47,7 +48,7 @@
     "ember-page-title": "^7.0.0",
     "ember-qunit": "^5.1.5",
     "ember-resolver": "^8.0.3",
-    "ember-source": "~4.6.0",
+    "ember-source": "^4.9.0-alpha.2",
     "ember-template-lint": "^4.10.1",
     "ember-welcome-page": "^6.2.0",
     "eslint": "^7.32.0",
@@ -65,7 +66,8 @@
   },
   "pnpm": {
     "overrides": {
-      "ember-source": "link:../../ember.js"
+      "ember-source": "link:../../Incremental/ember.js",
+      "@embroider/util": "1.8.3"
     },
     "patchedDependencies": {
       "@embroider/core@1.8.3": "patches/@embroider__core@1.8.3.patch"

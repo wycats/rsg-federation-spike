@@ -39,8 +39,8 @@ module.exports = function (defaults) {
         plugins: [
           new ModuleFederationPlugin({
             name: 'child', // this name needs to match with the entry name
-            filename: 'child-app.js',
-            exposes: { './app': './app.js' },
+            filename: 'engine.js',
+            exposes: { './app': './app.js', './child': './assets/child.js' },
             shared: {
               'ember-source': { singleton: true },
               'loader.js': { singleton: true },

@@ -1,7 +1,8 @@
 lockfileVersion: 5.4
 
 overrides:
-  ember-source: link:../../ember.js
+  ember-source: link:../../Incremental/ember.js
+  '@embroider/util': 1.8.3
 
 patchedDependencies:
   '@embroider/core@1.8.3':
@@ -13,6 +14,7 @@ specifiers:
   '@ember/test-helpers': ^2.8.1
   '@embroider/compat': ^1.8.3
   '@embroider/core': 1.8.3
+  '@embroider/util': 1.8.3
   '@embroider/webpack': ^1.8.3
   '@glimmer/component': ^1.1.2
   '@glimmer/tracking': ^1.1.2
@@ -33,7 +35,7 @@ specifiers:
   ember-page-title: ^7.0.0
   ember-qunit: ^5.1.5
   ember-resolver: ^8.0.3
-  ember-source: ~4.6.0
+  ember-source: link:../../Incremental/ember.js
   ember-template-lint: ^4.10.1
   ember-welcome-page: ^6.2.0
   eslint: ^7.32.0
@@ -51,9 +53,10 @@ specifiers:
 
 devDependencies:
   '@ember/optional-features': 2.0.0
-  '@ember/test-helpers': 2.8.1_lldqvmttcwhbf5bpr7uemjesum
+  '@ember/test-helpers': 2.8.1_uifd2uwyuvcicnufbc2bparemu
   '@embroider/compat': 1.8.3_@embroider+core@1.8.3
   '@embroider/core': 1.8.3_vzb2v4gzchou2hm6f5ed2ridua
+  '@embroider/util': 1.8.3_dktok7oytlnhwlldul6m4flo2q
   '@embroider/webpack': 1.8.3_6ieuvvsbaka5ylmi63qvoovikm
   '@glimmer/component': 1.1.2_@babel+core@7.18.10
   '@glimmer/tracking': 1.1.2
@@ -83,7 +86,7 @@ devDependencies:
   eslint-plugin-node: 11.1.0_eslint@7.32.0
   eslint-plugin-prettier: 4.2.1_7gsvg5lgwpfdww3i7smtqxamuy
   eslint-plugin-qunit: 7.3.1_eslint@7.32.0
-  loader.js: 4.7.0
+  loader.js: link:../../loader.js
   npm-run-all: 4.1.5
   prettier: 2.7.1
   qunit: 2.19.1
@@ -1994,7 +1997,7 @@ packages:
       - supports-color
     dev: true
 
-  /@ember/test-helpers/2.8.1_lldqvmttcwhbf5bpr7uemjesum:
+  /@ember/test-helpers/2.8.1_uifd2uwyuvcicnufbc2bparemu:
     resolution: {integrity: sha512-jbsYwWyAdhL/pdPu7Gb3SG1gvIXY70FWMtC/Us0Kmvk82Y+5YUQ1SOC0io75qmOGYQmH7eQrd/bquEVd+4XtdQ==}
     engines: {node: 10.* || 12.* || 14.* || 15.* || >= 16.*}
     peerDependencies:
@@ -2002,13 +2005,13 @@ packages:
     dependencies:
       '@ember/test-waiters': 3.0.2
       '@embroider/macros': 1.8.3
-      '@embroider/util': 1.8.3_ember-source@..+ember.js
+      '@embroider/util': 1.8.3_dktok7oytlnhwlldul6m4flo2q
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 5.7.2
       ember-destroyable-polyfill: 2.0.3_@babel+core@7.18.10
-      ember-source: link:../../ember.js
+      ember-source: link:../../Incremental/ember.js
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -2245,7 +2248,7 @@ packages:
       typescript-memoize: 1.1.0
     dev: true
 
-  /@embroider/util/1.8.3_ember-source@..+ember.js:
+  /@embroider/util/1.8.3_dktok7oytlnhwlldul6m4flo2q:
     resolution: {integrity: sha512-FvsPzsb9rNeveSnIGnsfLkWWBdSM5QIA9lDVtckUktRnRnBWZHm5jDxU/ST//pWMhZ8F0DucRlFWE149MTLtuQ==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
@@ -2254,7 +2257,7 @@ packages:
       '@embroider/macros': 1.8.3
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
-      ember-source: link:../../ember.js
+      ember-source: link:../../Incremental/ember.js
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7073,7 +7076,7 @@ packages:
       '@ember/test-helpers': ^2.4.0
       qunit: ^2.13.0
     dependencies:
-      '@ember/test-helpers': 2.8.1_lldqvmttcwhbf5bpr7uemjesum
+      '@ember/test-helpers': 2.8.1_uifd2uwyuvcicnufbc2bparemu
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
@@ -9761,10 +9764,6 @@ packages:
       big.js: 5.2.2
       emojis-list: 3.0.0
       json5: 2.2.1
-    dev: true
-
-  /loader.js/4.7.0:
-    resolution: {integrity: sha512-9M2KvGT6duzGMgkOcTkWb+PR/Q2Oe54df/tLgHGVmFpAmtqJ553xJh6N63iFYI2yjo2PeJXbS5skHi/QpJq4vA==}
     dev: true
 
   /locate-character/2.0.5:
